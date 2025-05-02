@@ -1,0 +1,192 @@
+����: At 3FFB7BB8�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  1 2024 16:19:11[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=214fch (136444) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=00031524 vaddr=3ffb0000 size=03ae4h ( 15076) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=00035010 vaddr=40080000 size=0b008h ( 45064) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8c39ch (574364) map[0m
+[0;32mI (387) esp_image: segment 4: paddr=000cc3c4 vaddr=4008b008 size=0b99ch ( 47516) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (430) cpu_start: Multicore app[0m
+[0;32mI (430) cpu_start: Pro cpu up.[0m
+[0;32mI (430) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (448) cpu_start: Pro cpu start user code[0m
+[0;32mI (448) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (448) cpu_start: Application information:[0m
+[0;32mI (453) cpu_start: Project name:     app-template[0m
+[0;32mI (458) cpu_start: App version:      1[0m
+[0;32mI (463) cpu_start: Compile time:     Jun  1 2024 16:16:37[0m
+[0;32mI (469) cpu_start: ELF file SHA256:  3d9e254b34766cdf...[0m
+[0;32mI (475) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (480) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (485) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (490) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (495) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (502) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFB7BB8 len 00028448 (161 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (534) spi_flash: detected chip: generic[0m
+[0;32mI (538) spi_flash: flash io: dio[0m
+[0;33mW (541) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (555) app_start: Starting scheduler on CPU0[0m
+[0;32mI (560) app_start: Starting scheduler on CPU1[0m
+[0;32mI (560) main_task: Started on CPU0[0m
+[0;32mI (570) main_task: Calling app_main()[0m
+I (630) wifi:wifi driver task: 3ffc0898, prio:23, stack:6656, core=0
+I (650) wifi:wifi firmware version: 91b9630
+I (650) wifi:wifi certification version: v7.0
+I (650) wifi:config NVS flash: enabled
+I (650) wifi:config nano formating: disabled
+I (660) wifi:Init data frame dynamic rx buffer num: 32
+I (660) wifi:Init static rx mgmt buffer num: 5
+I (670) wifi:Init management short buffer num: 32
+I (670) wifi:Init dynamic tx buffer num: 32
+I (680) wifi:Init static rx buffer size: 1600
+I (680) wifi:Init static rx buffer num: 10
+I (680) wifi:Init dynamic rx buffer num: 32
+[0;32mI (690) wifi_init: rx ba win: 6[0m
+[0;32mI (690) wifi_init: tcpip mbox: 32[0m
+[0;32mI (690) wifi_init: udp mbox: 6[0m
+[0;32mI (700) wifi_init: tcp mbox: 6[0m
+[0;32mI (700) wifi_init: tcp tx win: 5744[0m
+[0;32mI (710) wifi_init: tcp rx win: 5744[0m
+[0;32mI (710) wifi_init: tcp mss: 1440[0m
+[0;32mI (710) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (720) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (730) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (820) wifi:mode : sta (d0:ef:76:48:48:08)
+I (820) wifi:enable tsf
+[0;32mI (820) Websocket Server: WiFi connecting ...[0m
+I (1030) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (1030) wifi:state: init -> auth (b0)
+I (2030) wifi:state: auth -> init (200)
+I (2030) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (2030) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (2030) wifi:state: init -> auth (b0)
+I (2050) wifi:state: auth -> assoc (0)
+I (2090) wifi:state: assoc -> run (10)
+I (2120) wifi:connected with AndroidAP, aid = 5, channel 7, BW20, bssid = e2:d7:59:fc:cf:68
+I (2120) wifi:security: WPA2-PSK, phy: bgn, rssi: -31
+I (2130) wifi:pm start, type: 1
+
+[0;32mI (2130) Websocket Server: WiFi connected ...[0m
+I (2170) wifi:<ba-add>idx:0 (ifx:0, e2:d7:59:fc:cf:68), tid:0, ssn:0, winSize:64
+I (2190) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (2520) main_task: Returned from app_main()[0m
+[0;32mI (2520) Websocket Server: Websocket is listening.....[0m
+[0;32mI (3130) esp_netif_handlers: sta ip: 192.168.70.205, mask: 255.255.255.0, gw: 192.168.70.135[0m
+[0;32mI (3130) Websocket Server: WiFi got IP ...[0m
+[0;32mI (10630) Websocket Server: Connection Accepted[0m
+[0;32mI (10650) Websocket Server: loop started[0m
+[0;32mI (10650) Websocket Server: Received 526 bytes:
+GET / HTTP/1.1
+Host: 192.168.70.205
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: chrome-extension://oilioclnckkoijghdniegedkbocfpnip
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,hi;q=0.8
+Sec-WebSocket-Key: jK5o/HTRzm8gdk5ZLFO4nQ==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+[0m
+[0;32mI (10690) Websocket Server: It is a websocket request![0m
+[0;32mI (10700) Websocket Server: original key: jK5o/HTRzm8gdk5ZLFO4nQ==[0m
+[0;32mI (10700) Websocket Server: keyvalue with guid is: jK5o/HTRzm8gdk5ZLFO4nQ==258EAFA5-E914-47DA-95CA-C5AB0DC85B11[0m
+Input data: jK5o/HTRzm8gdk5ZLFO4nQ==258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+Base64 encoded SHA-1 hash: ArQ4iy0J1SIiQSNzz07qjsuFohs=
+before sending
+[0;32mI (10730) Websocket Server: HTTP/1.1 101 Switching Protocols
+Server: ESP-WebSocketsServer
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Accept: ArQ4iy0J1SIiQSNzz07qjsuFohs=
+
+[0m
+[0;32mI (10750) Websocket Server: buffers freed[0m
+Handshake done![0;32mI (11850) Websocket Server: No data frame received[0m
+[0;32mI (11850) Websocket Server: Data_buffer freed[0m
+[0;31mE (11970) Websocket Server: Error receiving data: -1[0m
+[0;32mI (11970) Websocket Server: Data_buffer freed[0m
+[0;31mE (12090) Websocket Server: Error receiving data: -1[0m
+[0;32mI (12090) Websocket Server: Data_buffer freed[0m
+[0;31mE (12210) Websocket Server: Error receiving data: -1[0m
+[0;32mI (12210) Websocket Server: Data_buffer freed[0m
+[0;31mE (12330) Websocket Server: Error receiving data: -1[0m
+[0;32mI (12330) Websocket Server: Data_buffer freed[0m
+[0;31mE (12450) Websocket Server: Error receiving data: -1[0m
+[0;32mI (12450) Websocket Server: Data_buffer freed[0m
+[0;31mE (12570) Websocket Server: Error receiving data: -1[0m
+[0;32mI (12570) Websocket Server: Data_buffer freed[0m
+[0;31mE (12690) Websocket Server: Error receiving data: -1[0m
+[0;32mI (12690) Websocket Server: Data_buffer freed[0m
+[0;31mE (12810) Websocket Server: Error receiving data: -1[0m
+[0;32mI (12810) Websocket Server: Data_buffer freed[0m
+[0;31mE (12930) Websocket Server: Error receiving data: -1[0m
+[0;32mI (12930) Websocket Server: Data_buffer freed[0m
+[0;31mE (13050) Websocket Server: Error receiving data: -1[0m
+[0;32mI (13050) Websocket Server: Data_buffer freed[0m
+[0;31mE (13170) Websocket Server: Error receiving data: -1[0m
+[0;32mI (13170) Websocket Server: Data_buffer freed[0m
+[0;31mE (13290) Websocket Server: Error receiving data: -1[0m
+[0;32mI (13290) Websocket Server: Data_buffer freed[0m
+[0;31mE (13410) Websocket Server: Error receiving data: -1[0m
+[0;32mI (13410) Websocket Server: Data_buffer freed[0m
+[0;31mE (13530) Websocket Server: Error receiving data: -1[0m
+[0;32mI (13530) Websocket Server: Data_buffer freed[0m
+[0;31mE (13650) Websocket Server: Error receiving data: -1[0m
+[0;32mI (13650) Websocket Server: Data_buffer freed[0m
+[0;31mE (13770) Websocket Server: Error receiving data: -1[0m
+[0;32mI (13770) Websocket Server: Data_buffer freed[0m
+[0;31mE (13890) Websocket Server: Error receiving data: -1[0m
+[0;32mI (13890) Websocket Server: Data_buffer freed[0m
+[0;31mE (14010) Websocket Server: Error receiving data: -1[0m
+[0;32mI (14010) Websocket Server: Data_buffer freed[0m
+[0;31mE (14130) Websocket Server: Error receiving data: -1[0m
+[0;32mI (14130) Websocket Server: Data_buffer freed[0m
+[0;31mE (14250) Websocket Server: Error receiving data: -1[0m
+[0;32mI (14250) Websocket Server: Data_buffer freed[0m
+[0;31mE (14370) Websocket Server: Error receiving data: -1[0m
+[0;32mI (14370) Websocket Server: Data_buffer freed[0m
+[0;31mE (14490) Websocket Server: Error receiving data: -1[0m
+[0;32mI (14490) Websocket Server: Data_buffer freed[0m
+[0;31mE (14610) Websocket Server: Error receiving data: -1[0m
+[0;32mI (14610) Websocket Server: Data_buffer freed[0m
+[0;31mE (14730) Websocket Server: Error receiving data: -1[0m
+[0;32mI (14730) Websocket Server: Data_buffer freed[0m
+[0;31mE (14850) Websocket Server: Error receiving data: -1[0m
+[0;32mI (14850) Websocket Server: Data_buffer freed[0m
+[0;31mE (14970) Websocket Server: Error receiving data: -1[0m
+[0;32mI (14970) Websocket Server: Data_buffer freed[0m
